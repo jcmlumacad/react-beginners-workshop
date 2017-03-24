@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
-import App from './App'
+import App from './Auth'
 
 const render = AppComponent =>
   ReactDOM.render( // eslint-disable-line react/no-render-return-value
@@ -17,8 +17,8 @@ render(App)
 
 if (module.hot) {
   // flow-disable-next-line
-  module.hot.accept('./App', () => {
-    const NextApp = require('./App').default // eslint-disable-line global-require
+  module.hot.accept('./Auth', () => {
+    const NextApp = require('./Auth').default // eslint-disable-line global-require
     render(NextApp)
   })
 }

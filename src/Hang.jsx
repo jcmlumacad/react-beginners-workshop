@@ -9,7 +9,7 @@ const NUMBER_OF_STAGES = 8
 // give hint
 // input letter, add step to the hangman, or reveal letter
 
-class App extends React.Component {
+class Hang extends React.Component {
 
   state = {
     progress: [],
@@ -83,4 +83,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default Hang
