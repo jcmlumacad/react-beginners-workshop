@@ -1,0 +1,14 @@
+1. use react dom to render h1
+2. externalize h1 to component
+3. transform h1 to coin app
+4. make hangman app
+5. add css modules to hangman app
+6. add css modules to coin app
+7. make auth app with css modules
+8. wrap all 3 apps in mother app that uses them as routes
+9. add flow
+10. add redux
+10.1 add redux actions
+10.2 add async operation (thunk)
+12. integrate material design?
+13. add UT? E2E? build typing app? go over enviorenment setup? (ask group)
