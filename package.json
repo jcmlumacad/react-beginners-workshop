@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "webpack-dev-server",
     "lint": "eslint src webpack.config.babel.js"
   },
   "git": {
