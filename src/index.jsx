@@ -1,16 +1,18 @@
 import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowerRouter } from 'react-router-dom'
 import { AppContainer } from 'react-hot-loader'
 
-// import App from './Auth'
-import App from './Coin'
+import App from './App'
 
 const render = AppComponent =>
   ReactDOM.render( // eslint-disable-line react/no-render-return-value
-    <AppContainer>
-      <AppComponent />
-    </AppContainer>,
+    <BrowerRouter>
+      <AppContainer>
+        <AppComponent />
+      </AppContainer>
+    </BrowerRouter>,
     document.querySelector('#root'),
   )
 
@@ -18,8 +20,8 @@ render(App)
 
 if (module.hot) {
   // flow-disable-next-line
-  module.hot.accept('./Auth', () => {
-    const NextApp = require('./Auth').default // eslint-disable-line global-require
+  module.hot.accept('./App', () => {
+    const NextApp = require('./App').default // eslint-disable-line global-require
     render(NextApp)
   })
 }
